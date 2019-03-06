@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Matrix</string>
+    <string name="search">search</string>
+    <string name="setting">设置</string>
+    <string name="help">帮助</string>
+    <string name="filter_code">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+</resources>

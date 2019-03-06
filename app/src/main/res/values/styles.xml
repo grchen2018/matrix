@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item><!--导航栏不覆盖应用-->
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="actionOverflowButtonStyle">@style/OverflowStyle</item><!--更改菜单按钮的样式-->
+        <item name="android:textColorSecondary">#ffffff</item><!--菜单按钮三个点颜色-->
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item><!--没有标题栏-->
+        <item name="windowNoTitle">true</item><!--没有标题-->
+    </style>
+
+    <style name="BaseAppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item><!--标题栏颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item><!--状态栏颜色-->
+        <item name="colorAccent">@color/colorAccent</item><!--其他重要部件颜色-->
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme1" parent="BaseAppTheme"/>
+
+
+
+    <style name="OverflowStyle">
+        <item name="android:src">@drawable/ic_add_white</item><!--菜单按钮的样式，放在应用主题里面-->
+    </style>
+
+
+
+    <!--菜单界面的主题   蓝色-->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark"><!--菜单界面的主题-->
+        <item name="android:colorBackground">@color/pureBlue</item><!--菜单界面的背景颜色-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item><!--用于控制menu-->
+        <item name="android:actionMenuTextColor">@android:color/white</item><!--菜单文字字体颜色-->
+    </style>
+
+
+
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item><!--使menu位置位于toolbar下-->
+    </style>
+
+</resources>
